@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Mulish', 'system-ui', 'sans-serif'],
+        sans: [
+        '"Pretendard Std Variable", sans-serif',
+          {
+            fontFeatureSettings: '"cv03", "cv04", "cv10", "cv11", "cv05", "ss10"',
+          },
+        ],
       },
     },
   },
