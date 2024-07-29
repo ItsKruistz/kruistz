@@ -7,12 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-        '"Pretendard Std Variable", sans-serif',
-          {
-            fontFeatureSettings: '"cv03", "cv04", "cv10", "cv11", "cv05", "ss10"',
-          },
-        ],
+        sans: ['Figtree', 'system-ui', 'sans-serif'],
       },
     },
   },
