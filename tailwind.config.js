@@ -11,6 +11,14 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false,
+    base: false,
+    styled: false,
+    utils: true,
+    prefix: "",
+    logs: false,
+  },
 }
 
