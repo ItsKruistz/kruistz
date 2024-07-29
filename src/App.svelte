@@ -9,7 +9,7 @@
     </button>
     <span class="font-medium text-xl ml-2.5">Title</span>
   </div>
-    <button class="flex items-center justify-center h-11 w-11 rounded-full text-white hover:bg-teal-400">
+    <button class="flex items-center justify-center h-11 w-11 rounded-full text-white hover:bg-teal-400 duration-150">
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-[22px] w-[22px]" viewBox="0 0 24 24">
         <circle cx="11" cy="11" r="8"/>
         <path d="m21 21-4-4"/>
