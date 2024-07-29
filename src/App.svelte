@@ -1,8 +1,50 @@
+<script lang="ts">
+    import { onMount } from 'svelte';
+
+    let sidebarOpen = false;
+
+    function toggleSidebar() {
+        sidebarOpen = !sidebarOpen;
+    }
+
+    // Close the sidebar when clicking outside of it
+    function handleClickOutside(event: MouseEvent) {
+        const sidebar = document.getElementById('sidebar');
+        const openSidebarButton = document.getElementById('open-sidebar');
+
+        if (!sidebar.contains(event.target) && !openSidebarButton.contains(event.target)) {
+            sidebarOpen = false;
+        }
+    }
+
+    onMount(() => {
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    });
+</script>
+
 <main>
+
+        <div class="absolute bg-gray-800 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300"
+            id="sidebar">
+            <!-- Your Sidebar Content -->
+            <div class="p-4">
+                <h1 class="text-2xl font-semibold">Sidebar</h1>
+                <ul class="mt-4">
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Home</a></li>
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">About</a></li>
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Services</a></li>
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
 <nav class="flex items-center justify-between flex-wrap bg-white dark:bg-[#101010] sticky z-10 top-0 p-2">
   <div class="flex items-center flex-shrink-0 text-black dark:text-white mr-6">
-    <button class="flex items-center justify-center h-11 w-11 rounded-full hover:bg-neutral-200 duration-150" aria-label="Open menu">
+    <button id="open-sidebar" class="flex items-center justify-center h-11 w-11 rounded-full hover:bg-neutral-200 duration-150" aria-label="Open menu" on:click={toggleSidebar}>
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-[22px] w-[22px]" viewBox="0 0 24 24">
         <path d="M3 12h18M3 6h18M3 18h18"/>
       </svg>
