@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        figtree: ['Mulish', 'system-ui', 'sans-serif'],
+        sans: ['Mulish', 'system-ui', 'sans-serif'],
       },
     },
   },
