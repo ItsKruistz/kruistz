@@ -7,7 +7,7 @@
         <path d="M3 12h18M3 6h18M3 18h18"/>
       </svg>
     </label>
-    <span class="font-semibold text-xl ml-2.5">Title</span>
+    <span class="font-semibold text-xl ml-2.5">Kruistz's Page</span>
     </div>
     <button class="flex items-center justify-center h-11 w-11 text-black dark:text-white rounded-full hover:opacity-50 duration-150" aria-label="Search">
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-[22px] w-[22px]" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
       <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-left text-left dark:text-white">
         <h2 class="text-3xl mb-4 font-bold">Things that I like to do</h2>
-        <p class="mb-8 leading-normal">WIP</p>
+        <p class="mb-8 leading-normal">Listening to music, playing games, sometimes do my homework</p>
       </div>
     </div>
   </section>
@@ -56,9 +56,13 @@
       <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-left text-left dark:text-white">
         <h2 class="text-3xl mb-4 font-bold">Tech stack used for this site</h2>
         <p class="mb-8 leading-normal"><span class="font-bold">Frontend:</span> Tailwind CSS, DaisyUI <br>
-        <span class="font-bold">Backend:</span> Svelte <br>
+        <span class="font-bold">Backend:</span> Svelte with TypeScript <br>
         <span class="font-bold">Build tool:</span> Vite </p>
       </div>
     </div>
   </section>
+  <footer class="bg-neutral-900 text-white px-5 py-4">
+    Copyright © 2024 - All rights reserved <br>
+    Instagram Tiktok Discord 4Chan Reddit
+  </footer>
 </main>
