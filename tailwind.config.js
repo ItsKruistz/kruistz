@@ -11,6 +11,17 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+
+  // daisyUI config (optional - here are the default values)
+  daisyui: {
+    themes: false,
+    base: false,
+    styled: false,
+    utils: true,
+    prefix: "",
+    logs: false,
+    themeRoot: ":root",
+  },
 }
 

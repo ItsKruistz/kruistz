@@ -1,14 +1,12 @@
-
-
 <main>
 
 <nav class="flex items-center justify-between flex-wrap bg-white dark:bg-[#101010] sticky z-10 top-0 p-2">
   <div class="flex items-center flex-shrink-0 text-black dark:text-white mr-6">
-    <button id="open-sidebar" class="flex items-center justify-center h-11 w-11 rounded-full hover:opacity-75 duration-150" aria-label="Open menu" on:click={toggleSidebar}>
+    <label for="my-drawer" class="drawer-button flex items-center justify-center h-11 w-11 rounded-full hover:opacity-75 duration-150" aria-label="Open menu">
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-[22px] w-[22px]" viewBox="0 0 24 24">
         <path d="M3 12h18M3 6h18M3 18h18"/>
       </svg>
-    </button>
+    </label>
     <span class="font-semibold text-xl ml-2.5">Title</span>
     </div>
     <button class="flex items-center justify-center h-11 w-11 text-black dark:text-white rounded-full hover:opacity-75 duration-150" aria-label="Search">
@@ -18,6 +16,18 @@
       </svg>
     </button>
 </nav>
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+  </div>
+  <div class="drawer-side z-20">
+    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+      <!-- Sidebar content here -->
+      <li><a class="text-red-300">Home</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
 
   <section>
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
