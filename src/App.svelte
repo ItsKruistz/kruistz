@@ -24,8 +24,9 @@
     <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
     <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-3">
       <!-- Sidebar content here -->
-      <li><a class="text-red-300 text-xl p-2 rounded-lg hover:bg-white text-black duration-150">Home</a></li>
-      <li><a class="text-red-300 text-xl p-2 rounded-lg hover:bg-white text-black duration-150">Sidebar Item 2</a></li>
+      <li><a class="text-xl p-2 rounded-lg hover:bg-white hover:text-[#292524] hover:font-medium duration-150">Home</a></li>
+      <li><a class="text-xl p-2 rounded-lg hover:bg-white hover:text-[#292524] hover:font-medium duration-150">Projects</a></li>
+      <li><a class="text-xl p-2 rounded-lg hover:bg-white hover:text-[#292524] hover:font-medium duration-150">Gallery</a></li>
     </ul>
   </div>
 
