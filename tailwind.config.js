@@ -15,7 +15,13 @@ export default {
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
-    themes: false,
+    themes: [
+      {
+        mytheme: {
+          "base-100": "#292524",
+          },
+        },
+      ],
     base: false,
     styled: false,
     utils: true,
