@@ -1,7 +1,7 @@
 <main>
 
-<nav class="flex items-center justify-between flex-wrap bg-white dark:bg-[#101010] sticky z-10 top-0 p-2">
-  <div class="flex items-center flex-shrink-0 text-black dark:text-white mr-6">
+<nav class="flex items-center justify-between flex-nowrap bg-white dark:bg-[#101010] sticky z-10 top-0 p-2">
+  <div class="flex items-center text-black dark:text-white mr-6">
     <label for="my-drawer" class="drawer-button flex items-center justify-center h-11 w-11 rounded-full hover:opacity-50 duration-150" aria-label="Open menu">
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-[22px] w-[22px]" viewBox="0 0 24 24">
         <path d="M3 12h18M3 6h18M3 18h18"/>
